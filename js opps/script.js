@@ -7,7 +7,7 @@
 // hard to reusable
 // extend issues
 // hard to maintain
-
+    
 //mtlb
 // OOP ka matlab hai Objects Oriented Programming
 // jisme hum objects aur classes ka use karte hain
