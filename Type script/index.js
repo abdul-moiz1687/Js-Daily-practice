@@ -132,7 +132,7 @@ console.log("User2 Name: " + user2.name + ", Age: " + user2.age);
 //Real use
 // Interface/Type use hota hai:
 // APIs me
-// React projects me
+// React project me
 // large apps me
 // clean code ke liye
 //Topic 5: DOM (HTML + TypeScript connect) 
@@ -149,3 +149,20 @@ function changeMsg() {
     msg.innerText = "Welcome to TypeScript!";
     document.body.style.color = "red";
 }
+//Primitive type
+let name = "Moiz";
+let age = 18;
+let isActive = true;
+let uname = "Moiz";
+let uage = 18;
+const student1 = {
+    name: "Moiz",
+    age: 18,
+    isPassed: true,
+};
+function showStudentInfo(student) {
+    console.log("Student Name: " + student.name);
+    console.log("Student Age: " + student.age);
+    console.log("Has the student passed? " + student.isPassed);
+}
+showStudentInfo(student1);

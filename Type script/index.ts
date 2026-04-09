@@ -205,7 +205,7 @@ console.log("User2 Name: " + user2.name + ", Age: " + user2.age);
 //Real use
 // Interface/Type use hota hai:
 // APIs me
-// React projects me
+// React project me
 // large apps me
 // clean code ke liye
 
@@ -227,3 +227,39 @@ function changeMsg():void{
     document.body.style.color="red";
 }
 
+//Primitive type
+let name :string="Moiz";
+let age :number=18;
+let isActive :boolean=true;
+
+//Step 2: Type Alias seekho (type)
+type Uname=string;
+type Uage=number;
+ let uname:Uname="Moiz";
+ let uage:Uage=18;
+
+ //Step 3: Interface seekho (interface)
+ type status = "active" | "inactive";
+ interface User{
+    name:string;
+    age:number;
+    status:status;
+ }
+
+ type Name = string;
+ interface Student{
+    name:Name;
+    age:number;
+    isPassed:boolean;
+ }
+const student1:Student={
+    name:"Moiz",
+    age:18,
+    isPassed:true,
+}
+function showStudentInfo(student:Student):void{
+    console.log("Student Name: " + student.name);
+    console.log("Student Age: " + student.age);
+    console.log("Has the student passed? " + student.isPassed);
+}
+showStudentInfo(student1);
